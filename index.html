@@ -1,0 +1,656 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="stylesheet.css" rel="stylesheet">
+  <title>Derrick Cui</title>
+  <meta name="description" content="A Windows '98 themed personal website for Derrick Cui">
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <script src="js/script.js"></script>
+</head>
+
+<body onload="clock()">
+  
+  <div class="icons">
+
+    <div class="computer-icon" id="computer-icon"> <!-- Welcome -->
+      <input type="image" value="Show Div" onclick="showIntro()" src="img/house.png" height="50" width="50"name="computer-icon"
+        alt="Computer icon from Windows 2000">
+      <p onclick="showIntro()">Welcome!</p>
+    </div>
+
+    <div class="computerscience" id="computer-icon"> <!-- computer science-->
+      <input type="image" value="Show Div" onclick="showCS()"  src="img/lambda.png" height="50" width="50" name="computer-icon"
+        alt="lambda">
+      <p onclick="showCS()">Computer Science</p>
+    </div>
+
+    <div class="aboutme-icon" id="aboutme-icon" onclick="showAboutMe()"> <!-- business/econ-->
+      <input type="image" onclick="showAboutMe()" src="img/world.png" height="50" width="50" name="aboutme-icon"
+        alt="File and looking glass icon from Windows 2000">
+      <p onclick="showAboutMe()">Business/Economics</p>
+    </div>
+
+    <div class="resume-icon" id="resume-icon" onclick="openResume()"> <!-- resume-->
+     <input type=image src="img/resume.png" height="50" width="50" name="resume-icon"
+          alt="resume picture lmao">
+        <p>Resume</p>
+      </a>
+    </div>
+
+    <div class="hob" onclick="showParot()" id="hob"> <!-- Hobbies/Other 2 pages-->
+      <input type="image" value="Show Div" onclick="showParot()" src="img/parot.png" height="50" width="50" name="parrot"
+        alt="Caewf">
+      <p onclick="showParot()">Hobbies/Personal</p>
+    </div>
+
+    <div class="contact-icon" onclick="showContact()" id="contact-icon"> <!-- contact -->
+      <input type="image" onclick="showContact()" src="img/cont.png" height="60" width="60" name="contact-icon"
+        alt="Globe icon from Windows 2000">
+      <p onclick="showContact()">Contact</p>
+    </div>
+
+
+  </div>
+
+  <div class="intro" id="intro">
+    <div class="intro-header" id="intro-header">
+      <p>welcome.html</p>
+      <br>
+      <div class="intro-buttons">
+        <button class="minimize" onclick="closeOut()" aria-label="Minimize button"></button>
+        <button class="closeOut" onclick="closeOut()" aria-label="Close out button"></button>
+      </div>
+    </div>
+
+    <div class="intro-options">
+      <p><u>F</u>ile</p>
+      <br>
+      <p><u>E</u>dit </p>
+      <p><u>V</u>iew </p>
+      <p><u>O</u>ptions </p>
+      <p><u>H</u>elp </p>
+    </div>
+
+    <div class="intro-separator"></div>
+    <div class="intro-content">
+      <br>
+      <div class="text-content">
+        <h1>Welcome!</h1>
+        <p>My name is Derrick, a Computer Science and Economics Double-Major student at the University of California, Berkeley.
+          <br>
+          <br>
+          This website is all about me, a mildly interesting guy who likes a lot of different things. On this site you'll find 
+          my resume, projects, hobbies, courses, personal resources, and contacts.
+
+          <br>
+          <br> 
+          <div id="rectangle">
+          This website functions more as a repository of my personal interests, projects, and experiences. 
+          I'm always willing to explore new fields which is why you'll find a scattered list of activites and interests from fields like 
+          3D design, coding, economic news, video gaming, data science, physics, music, and much more.
+
+          <br>
+          <br>
+          This website was built off of pre-existing code from <a href="url">https://github.com/marencka</a> because of how much 
+          I loved the template.
+        </p>
+        </div>
+      </div>
+      <img src="img/IMG_7689.JPG" height="100" width="40" alt="A picture of me!">
+    </div>
+
+    <div class="intro-footer">
+      <div class="intro-footer-content">
+        <p>2 object(s)</p>
+        <img src="img/corner.png" height="15" width="15" alt="corner icon from Windows 2000">
+      </div>
+    </div>
+  </div>
+
+  <!--computer science-->
+  <div class="csContent" id="csContent" style="display: none;">
+
+    <div class="aboutme-header" id="aboutme-header">
+      <p>computer_science->projects.txt
+      </p>
+      <div class="aboutme-buttons" onclick="closeOutCS()">
+        <button class="minimize" onclick="closeOutCS()" aria-label="Minimize button" ></button>
+        <button class="closeOut" onclick="closeOutCS()" aria-label="Close out button"></button>
+      </div>
+    </div>
+
+    <div class="aboutme-options">
+      <p><u>F</u>ile</p>
+      <br>
+      <p><u>E</u>dit </p>
+      <p><u>V</u>iew </p>
+      <p><u>O</u>ptions </p>
+      <p><u>H</u>elp </p>
+    </div>
+
+    <div class="aboutme-separator"></div>
+
+    <div class="aboutme-text">
+      <br>
+      <h1>Projects</h1>
+      <p>
+      <ul>
+        <!-- put projects here-->
+        <li class="project-title"> <a href="https://deepnote.com/project/COVID-vs-Labour-Market-VGVy3RI8RjGIOMGp2D5tgQ/%2Foverview.ipynb"> <em>Datathon: Impact of COVID on the Labor Market (Oct 2021)</em></a> 
+          <ul>
+            <li class="projects">Used DeepNote and compared vaccination rates per 100,000 and death rate per 100,000 to 
+            unemployment rates and labor participation rate for each month by each state using data from the World Bank. Use of correlation, 
+          hypothesis testing, regression modelling, and data analysis.
+        
+        
+        
+        
+           
+           
+         
+        </li>
+          </ul>
+        </li>
+
+        
+      </ul>
+      </p>
+    </div>
+
+    <div class="aboutme-footer">
+      <div class="aboutme-footer-content">
+        <p>1 object(s)</p>
+        <img src="img/corner.png" height="15" width="15" alt="corner icon from Windows 2000">
+      </div>
+    </div>
+  </div>
+
+<!-- second cs page content-->
+
+  <div class="csContent2" id="csContent2" style="display: none;">
+
+    <div class="aboutme-header" id="aboutme-header">
+      <p>computer_science->experience.txt
+      </p>
+      <div class="aboutme-buttons" onclick="closeOutCS()">
+        <button class="minimize" onclick="closeOutCS()" aria-label="Minimize button" ></button>
+        <button class="closeOut" onclick="closeOutCS()" aria-label="Close out button"></button>
+      </div>
+    </div>
+
+    <div class="aboutme-options">
+      <p><u>F</u>ile</p>
+      <br>
+      <p><u>E</u>dit </p>
+      <p><u>V</u>iew </p>
+      <p><u>O</u>ptions </p>
+      <p><u>H</u>elp </p>
+    </div>
+
+    <div class="aboutme-separator"></div>
+
+    <div class="aboutme-text">
+      <br>
+      <h1>Experience</h1>
+      <p>
+      <ul>
+        <li class="project-title"> <a href="https://comstruct.eu/"><em>Internship: Comstruct (Dec 2021 - Present)</em> </a>
+          <ul>
+            <li class="projects">Currently interning with Comstruct (startup) as a front-end developer, creating a purchasing platform for 
+              construction materials. Using Flutter (using Dart) and applying object-orientated programming skills.
+            </li>
+          </ul>
+        </li>
+
+        
+      </ul>
+      </p>
+    </div>
+
+    <div class="aboutme-footer">
+      <div class="aboutme-footer-content">
+        <p>1 object(s)</p>
+        <img src="img/corner.png" height="15" width="15" alt="corner icon from Windows 2000">
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- bus page 1 -->
+  <div class="aboutme-content" id="aboutme-content" style="display: none;">
+
+    <div class="aboutme-header" id="aboutme-header">
+      <p>business->projects.txt
+      </p>
+      <div class="aboutme-buttons" onclick="closeOutAboutMe()">
+        <button class="minimize" onclick="closeOutAboutMe()" aria-label="Minimize button" ></button>
+        <button class="closeOut" onclick="closeOutAboutMe()" aria-label="Close out button"></button>
+      </div>
+    </div>
+
+    <div class="aboutme-options">
+      <p><u>F</u>ile</p>
+      <br>
+      <p><u>E</u>dit </p>
+      <p><u>V</u>iew </p>
+      <p><u>O</u>ptions </p>
+      <p><u>H</u>elp </p>
+    </div>
+
+    <div class="aboutme-separator"></div>
+
+    <div class="aboutme-text">
+      <br>
+      <h1>Projects</h1>
+      <p>
+      <ul>
+        <li class="project-title"><a href="https://docs.google.com/presentation/d/1feD-AqG3teHS-M1MSjhx5MF4mpaB5xrepIfzdGqzPOk/edit?usp=sharing"><em>Case Competition: East West Bank Digital Banking Growth Plan (Nov 2021)</em></a>
+          <ul>
+            <li class="projects">
+              Developed customer aquisition and growth plans for East West Bank to better target international students. 
+              Created a slide deck recommending partnerships with on-campus organizations, tailored cash-back programs, 
+              cross-selling strategies, and improving marketing focus.
+            </li>
+          </ul>
+        </li>
+
+        <li class="project-title"><a href="https://docs.google.com/presentation/d/14L5MIPgMOn3xMVMUkapwQ8Ayam-2Uf7Gh1fRpz0VwGo/edit?usp=sharing"><em>Case Competition: Mintal Sleep Product and Promotion Strategy (Nov 2021)</em></a>
+          <ul>
+            <li class="projects">
+              Developed new product features and promotional strategies for a sleep-monitoring app.
+              Recommended gamification through in-game tokens redeamable for product coupons, period tracker integration, user referral incentives, 
+              and online and in-person promotional campaigns.
+            </li>
+          </ul>
+        </li>
+
+        <li class="project-title"><a href="https://docs.google.com/presentation/d/14L5MIPgMOn3xMVMUkapwQ8Ayam-2Uf7Gh1fRpz0VwGo/edit?usp=sharing"><em>Case Competition: 24 Hour Fitness  (Nov 2021)</em></a>
+          <ul>
+            <li class="projects">
+              Performed market, customer, and company research to recommend improvements after bankrupcy. 
+              Recommended a tiered pricing system, cutting hours for some services and workers, partnering with activewear brands,
+              and undergoing a digital transformation.
+            </li>
+          </ul>
+        </li>
+        <li class="project-title"><a href="https://www.notion.so/zeebra/644c6750d7674636b41bd311dffdfca0?v=ef9dca015111481088306b3d8873b014"><em>Notion: Information Repository</em></a>
+          <ul>
+            <li class="projects">
+              Active repository of articles, videos, essays about economics, politics, physics, research, infrastructure, etc that I love the most.
+            </li>
+          </ul>
+        </li>
+
+      </ul>
+      </p>
+    </div>
+
+    <div class="aboutme-footer">
+      <div class="aboutme-footer-content">
+        <p>1 object(s)</p>
+        <img src="img/corner.png" height="15" width="15" alt="corner icon from Windows 2000">
+      </div>
+    </div>
+  </div>
+
+    <!-- bus page 2 -->
+    <div class="aboutme-content2" id="aboutme-content2" style="display: none;">
+
+      <div class="aboutme-header" id="aboutme-header">
+        <p>business->experience.txt
+        </p>
+        <div class="aboutme-buttons" onclick="closeOutAboutMe()">
+          <button class="minimize" onclick="closeOutAboutMe()" aria-label="Minimize button" ></button>
+          <button class="closeOut" onclick="closeOutAboutMe()" aria-label="Close out button"></button>
+        </div>
+      </div>
+  
+      <div class="aboutme-options">
+        <p><u>F</u>ile</p>
+        <br>
+        <p><u>E</u>dit </p>
+        <p><u>V</u>iew </p>
+        <p><u>O</u>ptions </p>
+        <p><u>H</u>elp </p>
+      </div>
+  
+      <div class="aboutme-separator"></div>
+  
+      <div class="aboutme-text">
+        <br>
+        <h1>Experience</h1>
+        <p>
+        <ul>
+  
+          <li class="project-title"><a href="https://businessreview.berkeley.edu/?s=derrick&submit=Search"><em>Business Review Berkeley - Senior Columnist (Jan-May 2022)</em></a>
+            <ul>
+              <li class="projects">
+                Currently running the Economics column, editing columnist articles, holding weekly column meetings, organizing column writing workshops, and organizing
+                 column socials.
+
+              </li>
+            </ul>
+          </li>
+
+          <li class="project-title"><a href="https://lattice.com/"><em>Next Gen Consulting Analyst - Lattice (Sept-Dec 2021)</em></a>
+            <ul>
+              <li class="projects">
+                Through my consulting club Next Gen Consutling, consulted for Lattice, a $1 billion valued people management platform company collecting and analyzing 
+                key metrics breaking down regional competitors and partners across the EMEA, APAC, and LATAM regions. 
+                Synthesized findings through reports to construct comprehensive global landscape.
+              </li>
+            </ul>
+          </li>
+
+          <li class="project-title"><a href="https://businessreview.berkeley.edu/?s=derrick&submit=Search"><em>Business Review Berkeley - Writer (Sept-Dec 2021)</em></a>
+            <ul>
+              <li class="projects">
+                Wrote articles about economic news through different lenses. Improved writing quality to better connect and contrast 
+                perspectives, improve brevity in writing, and improve writing flow. Wrote about the unusual fixed-price nature of video games, 
+                the US fiscal plans to decarbonize, and the revolution in empirical economic research.
+
+              </li>
+            </ul>
+          </li>
+          
+        </ul>
+        </p>
+      </div>
+  
+      <div class="aboutme-footer">
+        <div class="aboutme-footer-content">
+          <p>4 object(s)</p>
+          <img src="img/corner.png" height="15" width="15" alt="corner icon from Windows 2000">
+        </div>
+      </div>
+    </div>
+  
+
+<!--hob page-->
+<div class="parot" id="parot" style="display: none;">
+
+  <div class="aboutme-header" id="aboutme-header">
+    <p>hobbies/personal->projects
+    </p>
+    <div class="aboutme-buttons" onclick="closeOutParot()">
+      <button class="minimize" onclick="closeOutParot()" aria-label="Minimize button" ></button>
+      <button class="closeOut" onclick="closeOutParot()" aria-label="Close out button"></button>
+    </div>
+  </div>
+
+  <div class="aboutme-options">
+    <p><u>F</u>ile</p>
+    <br>
+    <p><u>E</u>dit </p>
+    <p><u>V</u>iew </p>
+    <p><u>O</u>ptions </p>
+    <p><u>H</u>elp </p>
+  </div>
+
+  <div class="aboutme-separator"></div>
+
+  <div class="aboutme-text">
+    <br>
+    <h1>Projects</h1>
+    <p>
+    <ul>
+
+      <li class="project-title"><a href="img/owteam.JPG"><em>E-Sports Athlete: UC Berkeley Overwatch "Blue" team (Sept-Dec 2021)</em></a>
+        <ul>
+          <li class="projects">
+            Off-tank for the UC Berkeley Overwatch "Blue" team. Peak low-diamond. Play all tanks, mainly Sigma.
+          </li>
+        </ul>
+      </li>
+
+      <li class="project-title"><a href="https://www.barnesandnoble.com/w/dreams-and-mountains-derrick-cui/1137610892"><em>Self-Published Book: Dreams and Mountains (Jan-Aug 2020)</em></a>
+        <ul>
+          <li class="projects">
+            Wrote and published my own 40,000 word fiction novel that explores the countless contradictions in life which create both complexity and confusion. 
+            All initial sale profits (~$300) were donated to charity (Daily Bread Food Bank).
+          </li>
+        </ul>
+      </li>
+
+      <li class="project-title"><a href="src/3dface.png"><em>3D Printing Face Shields (Mar-May 2020)</em></a>
+        <ul>
+          <li class="projects">
+            Designed and 3D printed hospital-approved face shields using accessible materials with easy assembly. 
+            Donated 200+ face shields to local hospitals during PPE shortage.
+          </li>
+        </ul>
+      </li>
+
+      <li class="project-title"><a href="src/RayGun.stl"><em>3D Ray Gun (Jan-Mar 2020)</em></a>
+        <ul>
+          <li class="projects">
+            3D designed using Fusion 360 and painted (spray paint) a model ray-gun from Call-Of-Duty Zombies. (sepcifically from Black-Ops-2)
+            Self-taught 3D design skills, used general mirroring, sketching, and design tools.
+          </li>
+        </ul>
+      </li>
+
+      <li class="project-title"><a href="https://soundcloud.com/user-451419021/osft-11"><em>Song: Osft (Dec 2019)</em></a>
+        <ul>
+          <li class="projects">
+            Created my own video-game music-inspired song using Garageband. Basic looping and other techniques learned and used.
+          </li>
+        </ul>
+      </li>
+
+    </ul>
+    </p>
+  </div>
+
+  <div class="aboutme-footer">
+    <div class="aboutme-footer-content">
+      <p>4 object(s)</p>
+      <img src="img/corner.png" height="15" width="15" alt="corner icon from Windows 2000">
+    </div>
+  </div>
+</div>
+
+<!-- second hob page content-->
+
+<div class="parot2" id="parot2" style="display: none;">
+
+  <div class="aboutme-header" id="aboutme-header">
+    <p>hobbies/personal->misc
+    </p>
+    <div class="aboutme-buttons" onclick="closeOutParot()">
+      <button class="minimize" onclick="closeOutParot()" aria-label="Minimize button" ></button>
+      <button class="closeOut" onclick="closeOutParot()" aria-label="Close out button"></button>
+    </div>
+  </div>
+
+  <div class="aboutme-options">
+    <p><u>F</u>ile</p>
+    <br>
+    <p><u>E</u>dit </p>
+    <p><u>V</u>iew </p>
+    <p><u>O</u>ptions </p>
+    <p><u>H</u>elp </p>
+  </div>
+
+  <div class="aboutme-separator"></div>
+
+  <div class="aboutme-text">
+    <br>
+    <h1>Miscellaneous</h1>
+    <p>
+    <ul>
+
+      <li class="project-title"><em>Sports</em>
+        <ul>
+          <li class="projects">
+            Ex-competitive swimmer at MAC, love playing basketball, soccer, skiing, open to try any sport!
+          </li>
+        </ul>
+      </li>
+      <li class="project-title"><em>Games</em>
+        <ul>
+          <li class="projects">
+            Casual chess player, peak <a href="https://play.google.com/store/apps/details?id=appinventor.ai_julielynn_wong.TS_19b_Oct_2021&hl=en_US&gl=US">2063</a> in puzzles on chess.com. Love 
+            poker. 
+          </li>
+        </ul>
+      </li>
+      <li class="project-title"><em>Music</em>
+        <ul>
+          <li class="projects">
+            Ex-classical piano player, completed the ARCT Performers Piano exam with Honours. Love going to symphonies, gotta say San Fran Orchestra > Toronto Symphony Orchestra.
+          </li>
+        </ul>
+      </li>
+      <li class="project-title"><em>Reading</em>
+        <ul>
+          <li class="projects">
+            List of newsletters I follow and try to keep up to date with: Visual capitalist, The Economist, The information, Morning brew, TED, 
+            The Hustle, City news (680 news), The Conversation, Researcher, Ali Abdaal, Physics Today, CBC (sports, Minority report, etc), African Union newsletters, 
+            The Star (kenyan news), European Union newsletters, Asia Times.
+            I try to keep up with the news.
+          </li>
+        </ul>
+      </li>
+    </ul>
+    </p>
+  </div>
+
+  <div class="aboutme-footer">
+    <div class="aboutme-footer-content">
+      <p>4 object(s)</p>
+      <img src="img/corner.png" height="15" width="15" alt="corner icon from Windows 2000">
+    </div>
+  </div>
+</div>
+
+
+  <!-- CONTACT FILE -->
+  <div class="contact-content" id="contact-content" style="display: none;">
+    <div class="contact-header" id="contact-header">
+      <p>contact.txt</p>
+      <div class="contact-buttons" onclick="closeOutContact()">
+        <button class="minimize" onclick="closeOutContact()" aria-label="Minimize button"></button>
+        <button class="closeOut" onclick="closeOutContact()" aria-label="Close out button"></button>
+      </div>
+    </div>
+
+    <div class="contact-options">
+      <p><u>F</u>ile</p>
+      <br>
+      <p><u>E</u>dit </p>
+      <p><u>V</u>iew </p>
+      <p><u>O</u>ptions </p>
+      <p><u>H</u>elp </p>
+    </div>
+
+    <div class="contact-separator"></div>
+
+    <div class="contact-redirects">
+      <div class="contact-icons">
+        <div class="mail">
+          <a href="mailto:derrick_cui@berkeley.edu" target="_blank"><input height="100" width="100" type=image
+              src="img/mail.png" name="mail-icon" alt="Digitized mail icon">
+            <p>Email</p>
+          </a>
+        </div>
+
+        <div class="linkedin">
+          <a href="https://www.linkedin.com/in/derrick-cui-891902152//" rel="noreferrer" target="_blank"><input height="100" width="100" type=image
+              src="img/linkedin.png" name="linkedin-icon" alt="Digitized linkedin icon">
+            <p>LinkedIn</p>
+          </a>
+        </div>
+
+        <div class="github">
+          <a href="https://github.com/Zeebradoom" target="_blank"><input height="100" width="100" type=image
+              src="img/github.png" name="github-icon" alt="Digitized GitHub icon">
+            <p>GitHub</p>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="contact-footer">
+      <div class="contact-footer-content">
+        <p>3 object(s)</p>
+        <img src="img/corner.png" height="15" width="15" alt="corner icon from Windows 2000">
+      </div>
+    </div>
+  </div>
+
+
+<!-- movement -->
+
+<script>
+  dragElement(document.getElementById('parot'));
+  dragElement(document.getElementById('parot2'));
+  dragElement(document.getElementById("contact-content"));
+  dragElement(document.getElementById('aboutme-content'));
+  dragElement(document.getElementById('aboutme-content2'));
+  dragElement(document.getElementById("intro"));
+  dragElement(document.getElementById('csContent'));
+  dragElement(document.getElementById('csContent2'));
+  dragElement(document.getElementById('bus'));
+  dragElement(document.getElementById('bus2'));
+  
+
+
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "-header")) {
+    /* if present, the header is where you move the DIV from:*/
+    document.getElementById(elmnt.id + "-header").onmousedown = dragMouseDown;
+  } else {
+    /* otherwise, move the DIV from anywhere inside the DIV:*/
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    /* stop moving when mouse button is released:*/
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+document.addEventListener('mouseup', function (e) {
+var container = document.getElementById('startmenu');
+if (!container.contains(e.target)) {
+container.style.display = 'none';
+}
+});
+</script>
+</body>
+
+</html>
