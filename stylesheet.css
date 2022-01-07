@@ -1,0 +1,1903 @@
+/* Roots */
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,400i,700%7CPT+Mono');
+
+:root { 
+  --blueGreen: #008080; 
+  --grey: #BDBEBD; 
+  --darkerGrey: #979997; 
+  --lighterGrey: #e6e6e6;
+}
+
+html, body { 
+  background-color: var(--blueGreen);
+  margin: 0 auto;
+  font-family: w95fa;
+  cursor: url("img/cursor.png"), auto;
+  height: 100%;
+  line-height: 1.28em;
+}
+
+/* Icons */
+.icons {  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 300px;
+  width: 150px;
+  position: relative;
+  left: 10px;
+  top: 20px;
+  cursor: url("img/Cursor107.cur"), pointer;
+}
+
+.icons .computer-icon { 
+  flex-direction: column;
+  text-align: center;
+  color: #FFFFFF; 
+  margin-bottom: 20px;
+}
+
+.computer-icon p { 
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+
+
+.icons .aboutme-icon { 
+  flex-direction: column;
+  text-align: center;
+  color: #FFFFFF; 
+  /*margin-bottom: 20px;*/
+}
+
+.aboutme-icon p { 
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+.icons .computerscience { 
+  flex-direction: column;
+  text-align: center;
+  color: #FFFFFF; 
+  /*margin-bottom: 20px;*/
+}
+
+.computerscience p { 
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+.icons .hob { 
+  flex-direction: column;
+  text-align: center;
+  color: #FFFFFF; 
+  margin-bottom: 20px;
+}
+
+.hob p { 
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+.icons .contact-icon { 
+  flex-direction: column;
+  text-align: center;
+  color: #FFFFFF; 
+}
+
+.contact-icon p { 
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+.icons .resume-icon { 
+  flex-direction: column;
+  text-align: center;
+  color: #FFFFFF; 
+  margin-top: 20px;
+}
+
+.resume-icon p { 
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+.resume-icon a { 
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+
+/* Intro Message */
+.intro { 
+  position: fixed;
+  left: 50%;
+  top: 8%;
+  transform: translate(-50%, 0);
+  border-top: 2px solid #FFFFFF; 
+  border-left: 2px solid #FFFFFF;
+  border-bottom: 2px solid var(--darkerGrey);
+  border-right: 2px solid var(--darkerGrey);
+  background-color: var(--grey);
+}
+
+.intro .intro-header { 
+  display: flex;
+  justify-content: space-between;
+  height: 20px;
+  color: #FFFFFF;
+  background-color: #0808a9;
+  cursor: url("img/Cursor107.cur"), pointer;
+}
+
+.intro-header p { 
+  margin: 3px;
+  cursor: url("img/Cursor107.cur"), pointer;
+
+}
+
+.intro .intro-buttons { 
+  margin-top: 1px;
+  cursor: url("img/Cursor107.cur"), pointer;
+}
+
+.intro .intro-buttons .minimize { 
+  background-image: url('img/minimize.png'); 
+  height: 18px;
+  width: 20px;
+  background-size: 18px;
+  background-repeat: no-repeat;
+  cursor: url('img/Cursor107.cur'), pointer;
+}
+
+.intro .intro-buttons .closeOut { 
+  background-image: url('img/closeOut.png'); 
+  height: 18px;
+  width: 20px;
+  background-size: 18px;
+  background-repeat: no-repeat;
+  margin-right: 2px;
+  cursor: url('img/Cursor107.cur'), pointer;
+}
+
+.intro .intro-options { 
+  background-color: var(--grey); 
+  height: 18px;
+  display: flex;
+  justify-content: left;
+  cursor: url("img/Cursor107.cur"), pointer;
+
+}
+
+.intro-options p { 
+  margin: 0;
+  padding-left: 3px;
+  padding-top: 2px;
+}
+
+.intro .intro-separator { 
+  width: 100%;
+  height: 4px;
+  border-top: 1px solid var(--darkerGrey);
+  background-color: var(--grey);
+}
+
+/* size and shape of the entire welcome box*/
+.intro .intro-content { 
+  background-color:#ffffe1; 
+  width: 588px;
+  height: 600px;
+  display: table;
+  margin: 0 auto;
+  align-items: center;
+  border-top: 2px solid #000000;
+  border-left: 2px solid #000000;
+  border-right: 2px solid #FFFFFF; 
+  border-bottom: 2px solid #FFFFFF; 
+}
+
+.intro-content .text-content { 
+  width: 300px; 
+  height: 100px; 
+  position: absolute;
+  left: 40px;
+  display: flex; 
+  flex-direction: column;
+  text-align: center;
+}
+
+
+.intro-content #rectangle { 
+  width: 500px;
+  margin: 0px;
+  font-size: 20px;
+  text-align: left;
+
+}
+
+.text-content p { 
+  font-size: 20px;
+  margin: 0;
+  text-align: left;
+}
+
+/* this is for the photo of me */
+.intro-content img { 
+  height: 220px;
+  width: 220px;
+  position: absolute;
+  top: 120px; 
+  right: 20px;
+}
+
+
+.intro .intro-footer { 
+  background-color: var(--grey); 
+  width: 588px; 
+  margin: 0 auto;
+  height: 27px;
+  border-top: 1px solid var(--darkerGrey); 
+  border-left: 1px solid var(--darkerGrey); 
+  border-bottom: 1px solid #FFFFFF; 
+  border-right: 1px solid #FFFFFF;
+  padding-top: 1px;
+  cursor: url("img/Cursor107.cur"), pointer;
+}
+
+.intro-footer .intro-footer-content { 
+  display: flex;
+  justify-content: space-between;
+}
+
+.intro-footer-content p { 
+  margin-top: 6px;
+  margin-left: 4px;
+  text-align: center;
+}
+
+.intro-footer-content img { 
+  margin-top: 10px;
+}
+
+/* bus page 1*/
+.aboutme-content { 
+  position: absolute; 
+  width: 600px; 
+  height: 740px;
+  right: 40%;
+  border-top: 2px solid #FFFFFF; 
+  border-left: 2px solid #FFFFFF;
+  border-bottom: 2px solid var(--darkerGrey);
+  border-right: 2px solid var(--darkerGrey);
+  background-color: var(--grey);
+  bottom: 120px;
+}
+
+.aboutme-content .aboutme-header { 
+  display: flex;
+  justify-content: space-between;
+  height: 20px;
+  color: #FFFFFF;
+  background-color: #0808a9;
+}
+
+.aboutme-header p { 
+  margin: 3px;
+  cursor: url("img/Cursor107.cur"), pointer;
+
+}
+
+.aboutme-content .aboutme-buttons { 
+  margin: 1px;
+  cursor: url("img/Cursor107.cur"), pointer;
+}
+
+.aboutme-content .aboutme-buttons .minimize { 
+  background-image: url('img/minimize.png'); 
+  height: 18px;
+  width: 20px;
+  background-size: 18px;
+  background-repeat: no-repeat;
+  cursor: url('img/Cursor107.cur'), pointer;
+}
+
+.aboutme-content .aboutme-buttons .closeOut { 
+  background-image: url('img/closeOut.png'); 
+  height: 18px;
+  width: 20px;
+  background-size: 18px;
+  background-repeat: no-repeat;
+  margin-right: 2px;
+  cursor: url('img/Cursor107.cur'), pointer;
+}
+
+.aboutme-content .aboutme-options { 
+  background-color: var(--grey); 
+  height: 18px;
+  display: flex;
+  justify-content: left;
+  cursor: url("img/Cursor107.cur"), pointer;
+
+}
+
+.aboutme-options p { 
+  margin: 0;
+  padding-left: 3px;
+  padding-top: 2px;
+}
+
+.aboutme-content .aboutme-separator { 
+  width: 100%;
+  height: 4px;
+  border-top: 1px solid var(--darkerGrey);
+  background-color: var(--grey);
+}
+
+.aboutme-content .aboutme-text { 
+  background-color:#ffffe1; 
+  width: 588px;
+  height: 520px;
+  display: table;
+  border-top: 2px solid #000000;
+  border-left: 2px solid #000000;
+  border-right: 2px solid #FFFFFF; 
+  border-bottom: 2px solid #FFFFFF; 
+  position: absolute; 
+  left: 3px;
+  
+}
+
+.aboutme-text { 
+  width: 300px; 
+  height: 100px; 
+  position: absolute;
+  left: 40px;
+  display: flex; 
+  flex-direction: column;
+  text-align: center;
+  
+}
+
+.aboutme-text ul { 
+  font-size: 20px;
+  text-align: left;
+  position: relative; 
+  bottom: 10px;
+  margin: 7px;;
+}
+
+.aboutme-text .projects { 
+  margin-top: 20px;
+}
+
+.aboutme-content .aboutme-text .project-title a { 
+  color: #0808a9; 
+}
+
+.aboutme-content .aboutme-footer { 
+  background-color: var(--grey); 
+  width: 590px; 
+  margin: 0 auto;
+  position: absolute; 
+  bottom: 0px;
+  left: 3px;
+  height: 27px;
+  border-top: 1px solid var(--darkerGrey); 
+  border-left: 1px solid var(--darkerGrey); 
+  border-bottom: 1px solid #FFFFFF; 
+  border-right: 1px solid #FFFFFF;
+  padding-top: 1px;
+}
+
+.aboutme-footer .aboutme-footer-content { 
+  display: flex;
+  justify-content: space-between;
+}
+
+.aboutme-footer-content p { 
+  margin-top: 6px;
+  margin-left: 4px;
+  text-align: center;
+}
+
+.aboutme-footer-content img { 
+  margin-top: 10px;
+}
+
+/* About Me Content */
+.aboutme-content2 { 
+  position: absolute; 
+  width: 600px; 
+  height: 740px;
+  right: 40%;
+  border-top: 2px solid #FFFFFF; 
+  border-left: 2px solid #FFFFFF;
+  border-bottom: 2px solid var(--darkerGrey);
+  border-right: 2px solid var(--darkerGrey);
+  background-color: var(--grey);
+  bottom: 120px;
+}
+
+.aboutme-content2 .aboutme-header { 
+  display: flex;
+  justify-content: space-between;
+  height: 20px;
+  color: #FFFFFF;
+  background-color: #0808a9;
+}
+
+.aboutme-header p { 
+  margin: 3px;
+  cursor: url("img/Cursor107.cur"), pointer;
+
+}
+
+.aboutme-content2 .aboutme-buttons { 
+  margin: 1px;
+  cursor: url("img/Cursor107.cur"), pointer;
+}
+
+.aboutme-content2 .aboutme-buttons .minimize { 
+  background-image: url('img/minimize.png'); 
+  height: 18px;
+  width: 20px;
+  background-size: 18px;
+  background-repeat: no-repeat;
+  cursor: url('img/Cursor107.cur'), pointer;
+}
+
+.aboutme-content2 .aboutme-buttons .closeOut { 
+  background-image: url('img/closeOut.png'); 
+  height: 18px;
+  width: 20px;
+  background-size: 18px;
+  background-repeat: no-repeat;
+  margin-right: 2px;
+  cursor: url('img/Cursor107.cur'), pointer;
+}
+
+.aboutme-content2 .aboutme-options { 
+  background-color: var(--grey); 
+  height: 18px;
+  display: flex;
+  justify-content: left;
+  cursor: url("img/Cursor107.cur"), pointer;
+
+}
+
+.aboutme-options p { 
+  margin: 0;
+  padding-left: 3px;
+  padding-top: 2px;
+}
+
+.aboutme-content2 .aboutme-separator { 
+  width: 100%;
+  height: 4px;
+  border-top: 1px solid var(--darkerGrey);
+  background-color: var(--grey);
+}
+
+.aboutme-content2 .aboutme-text { 
+  background-color:#ffffe1; 
+  width: 588px;
+  height: 520px;
+  display: table;
+  border-top: 2px solid #000000;
+  border-left: 2px solid #000000;
+  border-right: 2px solid #FFFFFF; 
+  border-bottom: 2px solid #FFFFFF; 
+  position: absolute; 
+  left: 3px;
+}
+
+.aboutme-text { 
+  width: 300px; 
+  height: 100px; 
+  position: absolute;
+  left: 40px;
+  display: flex; 
+  flex-direction: column;
+  text-align: center;
+}
+
+.aboutme-text ul { 
+  font-size: 20px;
+  text-align: left;
+  position: relative; 
+  bottom: 10px;
+  margin: 7px;;
+  
+}
+
+.aboutme-text .projects { 
+  margin-top: 20px;
+}
+
+.aboutme-content2 .aboutme-text .project-title a { 
+  color: #0808a9; 
+}
+
+.aboutme-content2 .aboutme-footer { 
+  background-color: var(--grey); 
+  width: 590px; 
+  margin: 0 auto;
+  position: absolute; 
+  bottom: 0px;
+  left: 3px;
+  height: 27px;
+  border-top: 1px solid var(--darkerGrey); 
+  border-left: 1px solid var(--darkerGrey); 
+  border-bottom: 1px solid #FFFFFF; 
+  border-right: 1px solid #FFFFFF;
+  padding-top: 1px;
+}
+
+.aboutme-footer .aboutme-footer-content { 
+  display: flex;
+  justify-content: space-between;
+}
+
+.aboutme-footer-content p { 
+  margin-top: 6px;
+  margin-left: 4px;
+  text-align: center;
+}
+
+.aboutme-footer-content img { 
+  margin-top: 10px;
+}
+
+/* Cs page 1*/
+
+/* About Me Content */
+.csContent { 
+  position: absolute; 
+  width: 600px; 
+  height: 740px;
+  right: 40%;
+  border-top: 2px solid #FFFFFF; 
+  border-left: 2px solid #FFFFFF;
+  border-bottom: 2px solid var(--darkerGrey);
+  border-right: 2px solid var(--darkerGrey);
+  background-color: var(--grey);
+  bottom: 120px;
+}
+
+.csContent .aboutme-header { 
+  display: flex;
+  justify-content: space-between;
+  height: 20px;
+  color: #FFFFFF;
+  background-color: #0808a9;
+}
+
+.csContent p { 
+  margin: 3px;
+  cursor: url("img/Cursor107.cur"), pointer;
+
+}
+
+.csContent .aboutme-buttons { 
+  margin: 1px;
+  cursor: url("img/Cursor107.cur"), pointer;
+}
+
+.csContent .aboutme-buttons .minimize { 
+  background-image: url('img/minimize.png'); 
+  height: 18px;
+  width: 20px;
+  background-size: 18px;
+  background-repeat: no-repeat;
+  cursor: url('img/Cursor107.cur'), pointer;
+}
+
+.csContent .aboutme-buttons .closeOut { 
+  background-image: url('img/closeOut.png'); 
+  height: 18px;
+  width: 20px;
+  background-size: 18px;
+  background-repeat: no-repeat;
+  margin-right: 2px;
+  cursor: url('img/Cursor107.cur'), pointer;
+}
+
+.csContent .aboutme-options { 
+  background-color: var(--grey); 
+  height: 18px;
+  display: flex;
+  justify-content: left;
+  cursor: url("img/Cursor107.cur"), pointer;
+
+}
+
+.aboutme-options p { 
+  margin: 0;
+  padding-left: 3px;
+  padding-top: 2px;
+}
+
+.csContent .aboutme-separator { 
+  width: 100%;
+  height: 4px;
+  border-top: 1px solid var(--darkerGrey);
+  background-color: var(--grey);
+}
+
+.csContent .aboutme-text { 
+  background-color:#ffffe1; 
+  width: 588px;
+  height: 520px;
+  display: table;
+  border-top: 2px solid #000000;
+  border-left: 2px solid #000000;
+  border-right: 2px solid #FFFFFF; 
+  border-bottom: 2px solid #FFFFFF; 
+  position: absolute; 
+  left: 3px;
+}
+
+.aboutme-text { 
+  width: 300px; 
+  height: 100px; 
+  position: absolute;
+  left: 40px;
+  display: flex; 
+  flex-direction: column;
+  text-align: center;
+}
+
+.aboutme-text ul { 
+  font-size: 20px;
+  text-align: left;
+  position: relative; 
+  bottom: 10px;
+  margin: 7px;;
+}
+
+.aboutme-text .projects { 
+  margin-top: 20px;
+}
+
+.csContent .aboutme-text .project-title a { 
+  color: #0808a9; 
+}
+
+.csContent .aboutme-footer { 
+  background-color: var(--grey); 
+  width: 590px; 
+  margin: 0 auto;
+  position: absolute; 
+  bottom: 0px;
+  left: 3px;
+  height: 27px;
+  border-top: 1px solid var(--darkerGrey); 
+  border-left: 1px solid var(--darkerGrey); 
+  border-bottom: 1px solid #FFFFFF; 
+  border-right: 1px solid #FFFFFF;
+  padding-top: 1px;
+}
+
+.aboutme-footer .aboutme-footer-content { 
+  display: flex;
+  justify-content: space-between;
+}
+
+.aboutme-footer-content p { 
+  margin-top: 6px;
+  margin-left: 4px;
+  text-align: center;
+}
+
+.aboutme-footer-content img { 
+  margin-top: 10px;
+}
+
+/* Cs page 2*/
+
+/* About Me Content */
+.csContent2 { 
+  position: absolute; 
+  width: 600px; 
+  height: 740px;
+  right: 40%;
+  border-top: 2px solid #FFFFFF; 
+  border-left: 2px solid #FFFFFF;
+  border-bottom: 2px solid var(--darkerGrey);
+  border-right: 2px solid var(--darkerGrey);
+  background-color: var(--grey);
+  bottom: 120px;
+}
+
+.csContent2 .aboutme-header { 
+  display: flex;
+  justify-content: space-between;
+  height: 20px;
+  color: #FFFFFF;
+  background-color: #0808a9;
+}
+
+.csContent2 p { 
+  margin: 3px;
+  cursor: url("img/Cursor107.cur"), pointer;
+
+}
+
+.csContent2 .aboutme-buttons { 
+  margin: 1px;
+  cursor: url("img/Cursor107.cur"), pointer;
+}
+
+.csContent2 .aboutme-buttons .minimize { 
+  background-image: url('img/minimize.png'); 
+  height: 18px;
+  width: 20px;
+  background-size: 18px;
+  background-repeat: no-repeat;
+  cursor: url('img/Cursor107.cur'), pointer;
+}
+
+.csContent2 .aboutme-buttons .closeOut { 
+  background-image: url('img/closeOut.png'); 
+  height: 18px;
+  width: 20px;
+  background-size: 18px;
+  background-repeat: no-repeat;
+  margin-right: 2px;
+  cursor: url('img/Cursor107.cur'), pointer;
+}
+
+.csContent2 .aboutme-options { 
+  background-color: var(--grey); 
+  height: 18px;
+  display: flex;
+  justify-content: left;
+  cursor: url("img/Cursor107.cur"), pointer;
+
+}
+
+.aboutme-options p { 
+  margin: 0;
+  padding-left: 3px;
+  padding-top: 2px;
+}
+
+.csContent2 .aboutme-separator { 
+  width: 100%;
+  height: 4px;
+  border-top: 1px solid var(--darkerGrey);
+  background-color: var(--grey);
+}
+
+.csContent2 .aboutme-text { 
+  background-color:#ffffe1; 
+  width: 588px;
+  height: 520px;
+  display: table;
+  border-top: 2px solid #000000;
+  border-left: 2px solid #000000;
+  border-right: 2px solid #FFFFFF; 
+  border-bottom: 2px solid #FFFFFF; 
+  position: absolute; 
+  left: 3px;
+}
+
+.aboutme-text { 
+  width: 300px; 
+  height: 100px; 
+  position: absolute;
+  left: 40px;
+  display: flex; 
+  flex-direction: column;
+  text-align: center;
+}
+
+.aboutme-text ul { 
+  font-size: 20px;
+  text-align: left;
+  position: relative; 
+  bottom: 10px;
+  margin: 7px;;
+}
+
+.aboutme-text .projects { 
+  margin-top: 20px;
+}
+
+.csContent2 .aboutme-text .project-title a { 
+  color: #0808a9; 
+}
+
+.csContent .aboutme-footer { 
+  background-color: var(--grey); 
+  width: 590px; 
+  margin: 0 auto;
+  position: absolute; 
+  bottom: 0px;
+  left: 3px;
+  height: 27px;
+  border-top: 1px solid var(--darkerGrey); 
+  border-left: 1px solid var(--darkerGrey); 
+  border-bottom: 1px solid #FFFFFF; 
+  border-right: 1px solid #FFFFFF;
+  padding-top: 1px;
+}
+
+.aboutme-footer .aboutme-footer-content { 
+  display: flex;
+  justify-content: space-between;
+}
+
+.aboutme-footer-content p { 
+  margin-top: 6px;
+  margin-left: 4px;
+  text-align: center;
+}
+
+.aboutme-footer-content img { 
+  margin-top: 10px;
+}
+
+/* Cs page 1*/
+
+/* About Me Content */
+.parot { 
+  position: absolute; 
+  width: 600px; 
+  height: 740px;
+  right: 40%;
+  border-top: 2px solid #FFFFFF; 
+  border-left: 2px solid #FFFFFF;
+  border-bottom: 2px solid var(--darkerGrey);
+  border-right: 2px solid var(--darkerGrey);
+  background-color: var(--grey);
+  bottom: 120px;
+}
+
+.parot .aboutme-header { 
+  display: flex;
+  justify-content: space-between;
+  height: 20px;
+  color: #FFFFFF;
+  background-color: #0808a9;
+}
+
+.parot p { 
+  margin: 3px;
+  cursor: url("img/Cursor107.cur"), pointer;
+
+}
+
+.parot .aboutme-buttons { 
+  margin: 1px;
+  cursor: url("img/Cursor107.cur"), pointer;
+}
+
+.parot .aboutme-buttons .minimize { 
+  background-image: url('img/minimize.png'); 
+  height: 18px;
+  width: 20px;
+  background-size: 18px;
+  background-repeat: no-repeat;
+  cursor: url('img/Cursor107.cur'), pointer;
+}
+
+.parot .aboutme-buttons .closeOut { 
+  background-image: url('img/closeOut.png'); 
+  height: 18px;
+  width: 20px;
+  background-size: 18px;
+  background-repeat: no-repeat;
+  margin-right: 2px;
+  cursor: url('img/Cursor107.cur'), pointer;
+}
+
+.parot .aboutme-options { 
+  background-color: var(--grey); 
+  height: 18px;
+  display: flex;
+  justify-content: left;
+  cursor: url("img/Cursor107.cur"), pointer;
+
+}
+
+.aboutme-options p { 
+  margin: 0;
+  padding-left: 3px;
+  padding-top: 2px;
+}
+
+.parot .aboutme-separator { 
+  width: 100%;
+  height: 4px;
+  border-top: 1px solid var(--darkerGrey);
+  background-color: var(--grey);
+}
+
+.parot .aboutme-text { 
+  background-color:#ffffe1; 
+  width: 588px;
+  height: 520px;
+  display: table;
+  border-top: 2px solid #000000;
+  border-left: 2px solid #000000;
+  border-right: 2px solid #FFFFFF; 
+  border-bottom: 2px solid #FFFFFF; 
+  position: absolute; 
+  left: 3px;
+}
+
+.aboutme-text { 
+  width: 300px; 
+  height: 100px; 
+  position: absolute;
+  left: 40px;
+  display: flex; 
+  flex-direction: column;
+  text-align: center;
+}
+
+.aboutme-text ul { 
+  font-size: 20px;
+  text-align: left;
+  position: relative; 
+  bottom: 10px;
+  margin: 7px;;
+}
+
+.aboutme-text .projects { 
+  margin-top: 20px;
+}
+
+.parot .aboutme-text .project-title a { 
+  color: #0808a9; 
+}
+
+.parot .aboutme-footer { 
+  background-color: var(--grey); 
+  width: 590px; 
+  margin: 0 auto;
+  position: absolute; 
+  bottom: 0px;
+  left: 3px;
+  height: 27px;
+  border-top: 1px solid var(--darkerGrey); 
+  border-left: 1px solid var(--darkerGrey); 
+  border-bottom: 1px solid #FFFFFF; 
+  border-right: 1px solid #FFFFFF;
+  padding-top: 1px;
+}
+
+.aboutme-footer .aboutme-footer-content { 
+  display: flex;
+  justify-content: space-between;
+}
+
+.aboutme-footer-content p { 
+  margin-top: 6px;
+  margin-left: 4px;
+  text-align: center;
+}
+
+.aboutme-footer-content img { 
+  margin-top: 10px;
+}
+
+/* Cs page 2*/
+
+/* About Me Content */
+.parot2 { 
+  position: absolute; 
+  width: 600px; 
+  height: 740px;
+  right: 40%;
+  border-top: 2px solid #FFFFFF; 
+  border-left: 2px solid #FFFFFF;
+  border-bottom: 2px solid var(--darkerGrey);
+  border-right: 2px solid var(--darkerGrey);
+  background-color: var(--grey);
+  bottom: 120px;
+}
+
+.parot2 .aboutme-header { 
+  display: flex;
+  justify-content: space-between;
+  height: 20px;
+  color: #FFFFFF;
+  background-color: #0808a9;
+}
+
+.parot2 p { 
+  margin: 3px;
+  cursor: url("img/Cursor107.cur"), pointer;
+
+}
+
+.parot2 .aboutme-buttons { 
+  margin: 1px;
+  cursor: url("img/Cursor107.cur"), pointer;
+}
+
+.parot2 .aboutme-buttons .minimize { 
+  background-image: url('img/minimize.png'); 
+  height: 18px;
+  width: 20px;
+  background-size: 18px;
+  background-repeat: no-repeat;
+  cursor: url('img/Cursor107.cur'), pointer;
+}
+
+.parot2 .aboutme-buttons .closeOut { 
+  background-image: url('img/closeOut.png'); 
+  height: 18px;
+  width: 20px;
+  background-size: 18px;
+  background-repeat: no-repeat;
+  margin-right: 2px;
+  cursor: url('img/Cursor107.cur'), pointer;
+}
+
+.parot2 .aboutme-options { 
+  background-color: var(--grey); 
+  height: 18px;
+  display: flex;
+  justify-content: left;
+  cursor: url("img/Cursor107.cur"), pointer;
+
+}
+
+.aboutme-options p { 
+  margin: 0;
+  padding-left: 3px;
+  padding-top: 2px;
+}
+
+.parot2 .aboutme-separator { 
+  width: 100%;
+  height: 4px;
+  border-top: 1px solid var(--darkerGrey);
+  background-color: var(--grey);
+}
+
+.parot2 .aboutme-text { 
+  background-color:#ffffe1; 
+  width: 588px;
+  height: 520px;
+  display: table;
+  border-top: 2px solid #000000;
+  border-left: 2px solid #000000;
+  border-right: 2px solid #FFFFFF; 
+  border-bottom: 2px solid #FFFFFF; 
+  position: absolute; 
+  left: 3px;
+}
+
+.aboutme-text { 
+  width: 300px; 
+  height: 100px; 
+  position: absolute;
+  left: 40px;
+  display: flex; 
+  flex-direction: column;
+  text-align: center;
+}
+
+.aboutme-text ul { 
+  font-size: 20px;
+  text-align: left;
+  position: relative; 
+  bottom: 10px;
+  margin: 7px;;
+}
+
+.aboutme-text .projects { 
+  margin-top: 20px;
+}
+
+.parot2 .aboutme-text .project-title a { 
+  color: #0808a9; 
+}
+
+.parot .aboutme-footer { 
+  background-color: var(--grey); 
+  width: 590px; 
+  margin: 0 auto;
+  position: absolute; 
+  bottom: 0px;
+  left: 3px;
+  height: 27px;
+  border-top: 1px solid var(--darkerGrey); 
+  border-left: 1px solid var(--darkerGrey); 
+  border-bottom: 1px solid #FFFFFF; 
+  border-right: 1px solid #FFFFFF;
+  padding-top: 1px;
+}
+
+.aboutme-footer .aboutme-footer-content { 
+  display: flex;
+  justify-content: space-between;
+}
+
+.aboutme-footer-content p { 
+  margin-top: 6px;
+  margin-left: 4px;
+  text-align: center;
+}
+
+.aboutme-footer-content img { 
+  margin-top: 10px;
+}
+
+
+
+/* Contact Content */
+.contact-content { 
+  position: absolute; 
+  width: 600px; 
+  height: 450px;
+  left: 40%;
+  border-top: 2px solid #FFFFFF; 
+  border-left: 2px solid #FFFFFF;
+  border-bottom: 2px solid var(--darkerGrey);
+  border-right: 2px solid var(--darkerGrey);
+  background-color: var(--grey);
+}
+
+.contact-content .contact-header { 
+  display: flex;
+  justify-content: space-between;
+  height: 20px;
+  color: #FFFFFF;
+  background-color: #0808a9;
+  cursor: url('img/Cursor107.cur'), pointer;
+}
+
+.contact-header p { 
+  margin: 3px;
+  cursor: url("img/Cursor107.cur"), pointer;
+
+}
+
+.contact-content .contact-buttons { 
+  margin-top: 1px;
+  cursor: url("img/Cursor107.cur"), pointer;
+
+}
+
+.contact-content .contact-buttons .minimize { 
+  background-image: url('img/minimize.png'); 
+  height: 18px;
+  width: 20px;
+  background-size: 18px;
+  background-repeat: no-repeat;
+  cursor: url('img/Cursor107.cur'), pointer;
+}
+
+.contact-content .contact-buttons .closeOut { 
+  background-image: url('img/closeOut.png'); 
+  height: 18px;
+  width: 20px;
+  background-size: 18px;
+  background-repeat: no-repeat;
+  margin-right: 2px;
+  cursor: url('img/Cursor107.cur'), pointer;
+}
+
+.contact-content .contact-options { 
+  background-color: var(--grey); 
+  height: 18px;
+  display: flex;
+  justify-content: left;
+  cursor: url("img/Cursor107.cur"), pointer;
+
+}
+
+.contact-options p { 
+  margin: 0;
+  padding-left: 3px;
+  padding-top: 2px;
+}
+
+.contact-content .contact-separator { 
+  width: 100%;
+  height: 4px;
+  border-top: 1px solid var(--darkerGrey);
+  background-color: var(--grey);
+}
+
+
+.contact-content .contact-redirects .contact-icons { 
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+
+.contact-redirects .contact-icons { 
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 3px;
+}
+
+.contact-footer .contact-footer-content { 
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-footer-content p { 
+  margin-top: 6px;
+  margin-left: 4px;
+  text-align: center;
+}
+
+.contact-footer-content img { 
+  margin-top: 10px;
+  
+}
+
+.contact-redirects h1 { 
+  position: absolute; 
+  top: 10px;
+  right: 100px;
+  padding: 0;
+}
+
+.contact-redirects .mail { 
+  align-items: center;
+  text-align: center;
+  padding: 0;
+}
+
+.mail a { 
+  color: #000000; 
+  text-decoration: none;
+  font-size: 24px;
+  padding: 0;
+}
+
+.contact-redirects .linkedin { 
+  align-items: center;
+  text-align: center;
+  padding: 0;
+}
+
+.linkedin a { 
+  color: #000000; 
+  text-decoration: none;
+  font-size: 24px;
+  padding: 0;
+}
+
+.contact-redirects .github { 
+  align-items: center;
+  text-align: center;
+  padding: 0;
+}
+
+.github a { 
+  color: #000000; 
+  text-decoration: none;
+  font-size: 24px;
+  padding: 0;
+}
+
+.contact-text p { 
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-content .contact-footer { 
+  background-color: var(--grey); 
+  width: 590px; 
+  margin: 0 auto;
+  position: absolute; 
+  bottom: 1px;
+  left: 3px;
+  height: 27px;
+  border-top: 1px solid var(--darkerGrey); 
+  border-left: 1px solid var(--darkerGrey); 
+  border-bottom: 1px solid #FFFFFF; 
+  border-right: 1px solid #FFFFFF;
+  padding-top: 1px;
+}
+
+.contact-footer .contact-footer-content { 
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-footer-content p { 
+  margin-top: 6px;
+  margin-left: 4px;
+  text-align: center;
+}
+
+.contact-footer-content img { 
+  margin-top: 10px;
+  
+}
+
+/* --------------------------------------------------- */
+
+
+/* 
+MOBILE VERSION */
+@media only screen and (max-width: 767px) { 
+  body { 
+    background-color: #008080;
+  }
+
+/* Removing Displays */
+  #taskbar .icons { 
+    display: none;
+  }
+
+  #taskbar .partition1 { 
+    display: none;
+  }
+
+  #taskbar .partition { 
+    display: none;
+  }
+
+  #taskbar .partition2 { 
+    display: none; 
+  }
+
+  #taskbar .intro-button { 
+    display: none;
+  }
+
+  #taskbar .volume { 
+    display: none;
+  }
+
+  /* Icons */
+
+  .icons {  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    height: 100px;
+    width: 100%;
+    margin: 0 auto;
+    left: -1px;
+  }
+  
+  .icons .computer-icon { 
+    flex-direction: column;
+    text-align: center;
+    color: #FFFFFF; 
+    height: 120px;
+  }
+
+  .computer-icon p { 
+    margin-top: 5px;
+    font-size: 20px;
+  }
+  
+  .icons .aboutme-icon { 
+    flex-direction: column;
+    text-align: center;
+    color: #FFFFFF; 
+  }
+  
+  .aboutme-icon p { 
+    margin-top: 5px;
+    font-size: 20px;
+  }
+
+  .icons .computerscience { 
+    flex-direction: column;
+    text-align: center;
+    color: #FFFFFF; 
+  }
+  
+  .computerscience p { 
+    margin-top: 5px;
+    font-size: 20px;
+  }
+  
+  .icons .hob { 
+    flex-direction: column;
+    text-align: center;
+    color: #FFFFFF; 
+  }
+  
+  .hob p { 
+    margin-top: 5px;
+    font-size: 20px;
+  }
+  .icons .courses { 
+    flex-direction: column;
+    text-align: center;
+    color: #FFFFFF; 
+  }
+  
+  .courses p { 
+    margin-top: 5px;
+    font-size: 20px;
+  }
+
+  .icons .contact-icon { 
+    flex-direction: column;
+    text-align: center;
+    color: #FFFFFF; 
+  }
+  
+  .contact-icon p { 
+    margin-top: 5px;
+    font-size: 20px;
+  }
+  
+  .icons .resume-icon { 
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+  }
+  
+  .resume-icon p { 
+    margin-top: 5px;
+    font-size: 20px;
+  }
+  
+  .resume-icon a { 
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+
+  /* Intro */
+.intro { 
+  position: relative;
+  border-top: 2px solid #FFFFFF; 
+  border-left: 2px solid #FFFFFF;
+  border-bottom: 2px solid var(--darkerGrey);
+  border-right: 2px solid var(--darkerGrey);
+  background-color: var(--grey);
+  height: 700px; 
+  width: 320px;
+  transform: translateX(-50%);
+  top: 9%;
+}
+
+.intro-header { 
+  display: flex;
+  justify-content: space-between;
+  color: #FFFFFF;
+  background-color: #0808a9;
+  position: relative; 
+  top: 15px;
+  font-size: 20px;
+}
+
+.intro .intro-buttons { 
+  position: relative;
+  top: 4px;
+  /*height: 24px; 
+  width: 27px;*/
+  right: 4px;
+}
+
+.intro .intro-buttons .minimize { 
+  display: none;
+}
+
+.intro .intro-buttons .closeOut { 
+  background-image: url('img/closeOut.png');
+  background-size: 25px;
+  /*height: 25px;
+  width: 28px;*/
+  background-repeat: no-repeat;
+  position: relative; 
+}
+
+.intro .intro-options { 
+  background-color: var(--grey); 
+  /*height: 18px;*/
+  display: flex;
+  justify-content: left;
+}
+
+.intro-options p { 
+  margin: 0;
+  padding-left: 3px;
+  padding-top: 2px;
+}
+
+.intro .intro-separator { 
+  width: 100%;
+  height: 4px;
+  border-top: 1px solid var(--darkerGrey);
+  background-color: var(--grey);
+}
+
+.intro .intro-content { 
+  background-color:#ffffe1; 
+  /* width: 300px;
+  height: 300px;*/
+  margin: 0 auto;
+  align-items: center;
+  border-top: 2px solid #000000;
+  border-left: 2px solid #000000;
+  border-right: 2px solid #FFFFFF; 
+  border-bottom: 2px solid #FFFFFF; 
+  overflow-y: scroll;
+}
+/*
+.intro-content .text-content { 
+  width: 290px; 
+  height: 335px; 
+  position: relative;
+  display: flex; 
+  flex-direction: column;
+  text-align: left;
+  left: 7px;
+  overflow-y: scroll;
+}
+*/
+
+.intro-content .text-content h1 { 
+  margin-bottom: 25px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.text-content p { 
+  font-size: 20px;
+  margin: 0;
+  text-align: left;
+}
+/*
+.text-content #rectangle { 
+   width: 700px; 
+}
+*/
+.intro-content img { 
+  display: none;
+}
+
+
+.intro-footer { 
+  background-color: var(--grey); 
+  width: 302px; 
+  margin: 0 auto;
+  height: 27px;
+  border-top: 1px solid var(--darkerGrey); 
+  border-left: 1px solid var(--darkerGrey); 
+  border-bottom: 1px solid #FFFFFF; 
+  border-right: 1px solid #FFFFFF;
+  padding-top: 1px;
+  top: 10px;
+}
+
+.intro-footer .intro-footer-content { 
+  display: flex;
+  justify-content: space-between;
+}
+
+.intro-footer-content p { 
+  margin-top: 6px;
+  margin-left: 4px;
+  text-align: center;
+}
+
+.intro-footer-content img { 
+  margin-top: 10px;
+}
+
+/* Projects Content */
+.aboutme-content { 
+  position: relative;
+  border-top: 2px solid #FFFFFF; 
+  border-left: 2px solid #FFFFFF;
+  border-bottom: 2px solid var(--darkerGrey);
+  border-right: 2px solid var(--darkerGrey);
+  background-color: var(--grey);
+  height: 450px; 
+  width: 320px;
+  left: 50%; 
+  transform: translateX(-50%);
+  top: 9%;
+}
+
+.aboutme-content .aboutme-header { 
+  display: flex;
+  justify-content: space-between;
+  height: 38px;
+  color: #FFFFFF;
+  background-color: #0808a9;
+}
+
+.aboutme-header p { 
+  position: relative; 
+  top: 10px;
+  font-size: 20px;
+}
+
+.aboutme-content .aboutme-buttons { 
+  position: relative;
+  top: 4px;
+  height: 24px; 
+  width: 27px;
+  right: 4px;
+}
+
+.aboutme-content .aboutme-buttons .minimize { 
+  display: none;
+}
+
+.aboutme-content .aboutme-buttons .closeOut { 
+  background-image: url('img/closeOut.png');
+  background-size: 25px;
+  height: 25px;
+  width: 28px;
+  background-repeat: no-repeat;
+  position: relative; 
+}
+
+.aboutme-content .aboutme-options { 
+  background-color: var(--grey); 
+  height: 18px;
+  display: flex;
+  justify-content: left;
+}
+
+.aboutme-options p { 
+  margin: 0;
+  padding-left: 3px;
+  padding-top: 2px;
+}
+
+.aboutme-content .aboutme-separator { 
+  width: 100%;
+  height: 4px;
+  border-top: 1px solid var(--darkerGrey);
+  background-color: var(--grey);
+}
+
+.aboutme-content .aboutme-text { 
+  width: 300px; 
+  height: 354px;
+  position: relative;
+  display: flex; 
+  flex-direction: column;
+  text-align: center;
+  left: 6px;
+  overflow-y: scroll;
+}
+
+.aboutme-content .aboutme-text h1 { 
+  margin-bottom: 35px;
+  margin-top: 10px;
+  text-align: center;
+
+}
+
+.aboutme-text p { 
+  font-size: 20px;
+  margin: 0;
+  text-align: left;
+}
+
+
+.aboutme-content .aboutme-footer { 
+  background-color: var(--grey); 
+  width: 302px; 
+  margin: 0 auto;
+  height: 27px;
+  border-top: 1px solid var(--darkerGrey); 
+  border-left: 1px solid var(--darkerGrey); 
+  border-bottom: 1px solid #FFFFFF; 
+  border-right: 1px solid #FFFFFF;
+  margin-top: 2px;
+  position: relative;
+  left: -2px;
+}
+
+.aboutme-footer .aboutme-footer-content { 
+  display: flex;
+  justify-content: space-between;
+}
+
+.aboutme-footer-content p { 
+  margin-top: 6px;
+  margin-left: 4px;
+  text-align: center;
+}
+
+.aboutme-footer-content img { 
+  margin-top: 10px;
+}
+
+/* Contact */
+.contact-content { 
+  position: relative;
+  border-top: 2px solid #FFFFFF; 
+  border-left: 2px solid #FFFFFF;
+  border-bottom: 2px solid var(--darkerGrey);
+  border-right: 2px solid var(--darkerGrey);
+  background-color: var(--grey);
+  height: 440px; 
+  width: 320px;
+  left: 50%; 
+  transform: translateX(-50%);
+  top: 9%;
+}
+
+.contact-content .contact-header { 
+  display: flex;
+  justify-content: space-between;
+  height: 38px;
+  color: #FFFFFF;
+  background-color: #0808a9;
+}
+
+.contact-header p { 
+  position: relative; 
+  top: 10px;
+  font-size: 20px;
+}
+
+.contact-content .contact-buttons { 
+  position: relative;
+  top: 4px;
+  height: 24px; 
+  width: 27px;
+  right: 4px;
+}
+
+.contact-content .contact-buttons .minimize { 
+  display: none;
+}
+
+.contact-content .contact-buttons .closeOut { 
+  background-image: url('img/closeOut.png');
+  background-size: 25px;
+  height: 25px;
+  width: 28px;
+  background-repeat: no-repeat;
+  position: relative; 
+}
+
+.contact-content .contact-options { 
+  background-color: var(--grey); 
+  height: 18px;
+  display: flex;
+  justify-content: left;
+}
+
+.contact-options p { 
+  margin: 0;
+  padding-left: 3px;
+  padding-top: 2px;
+}
+
+.contact-content .contact-separator { 
+  width: 100%;
+  height: 4px;
+  border-top: 1px solid var(--darkerGrey);
+  background-color: var(--grey);
+}
+
+.contact-content .contact-redirects { 
+  overflow-y: scroll;
+  height: 365px;
+}
+
+.contact-content .contact-redirects .contact-icons { 
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 0px;
+  
+}
+
+.contact-redirects .contact-icons { 
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 3px;
+  overflow-y: scroll;
+}
+
+
+
+.contact-footer .contact-footer-content { 
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  overflow-y: scroll;
+}
+
+.contact-footer-content p { 
+  margin-top: 6px;
+  margin-left: 4px;
+  text-align: center;
+}
+
+.contact-footer-content img { 
+  margin-top: 10px;
+}
+
+.contact-redirects h1 { 
+  position: absolute; 
+  top: 10px;
+  right: 100px;
+  padding: 0;
+}
+
+.contact-redirects .mail { 
+  align-items: center;
+  text-align: center;
+  margin-top: 35px;
+}
+
+.mail a { 
+  color: #000000; 
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.contact-redirects .linkedin { 
+  align-items: center;
+  text-align: center;
+}
+
+.linkedin a { 
+  color: #000000; 
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.contact-redirects .github { 
+  align-items: center;
+  text-align: center;
+}
+
+.github a { 
+  color: #000000; 
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.contact-text p { 
+  font-size: 20px;
+}
+
+
+.contact-content .contact-footer { 
+  background-color: var(--grey); 
+  width: 319px; 
+  margin: 0 auto;
+  height: 27px;
+  border-top: 1px solid var(--darkerGrey); 
+  border-left: 1px solid var(--darkerGrey); 
+  border-bottom: 1px solid #FFFFFF; 
+  border-right: 1px solid #FFFFFF;
+  margin-top: 2px;
+  position: relative;
+  left: -1px;
+  bottom: 18px;
+}
+
+.contact-footer .contact-footer-content { 
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-footer-content p { 
+  margin-top: 6px;
+  margin-left: 4px;
+  text-align: center;
+}
+
+.contact-footer-content img { 
+  margin-top: 10px;
+}
+
+
+}
