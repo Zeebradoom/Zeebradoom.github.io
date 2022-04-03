@@ -76,8 +76,8 @@ function closeOutContact() {
 }
 
 function openResume() { 
-  window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ');
-  //window.open('src/alexisdanzresume.pdf', '_blank'); 
+  //window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ');
+  window.open('src/currentgeneral.pdf', '_blank'); 
   
   return false;
 }
